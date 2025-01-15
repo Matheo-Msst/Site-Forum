@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un blog</title>
+</head>
+<body>
+    <h1>Ajouter un blog</h1>
+    <form action="/ajouter" method="POST" enctype="multipart/form-data">
+        <label for="title">Titre :</label>
+        <input type="text" name="title" id="title" required><br><br>
+
+        <label for="description">Description :</label>
+        <textarea name="description" id="description" required></textarea><br><br>
+
+        <label for="image">Choisir une image (format PNG, JPG) :</label>
+        <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg" required><br><br>
+        
+        <input type="submit" value="Ajouter le blog">
+    </form>
+</body>
+</html>

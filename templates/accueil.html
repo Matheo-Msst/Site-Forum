@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/static/css/general.css">
+    <link rel="stylesheet" href="/static/css/accueil.css">
+</head>
+<body>
+    <section>
+        <h1>Bienvenue sur le site des blogs</h1>
+        <h2>Liste des blogs :</h2>
+    </section>
+
+    <section class="Blog">
+        <ul>
+            {{range $index, $titre := .Titre}}  
+            <li>
+                <h3>
+                    Blog N°{{$index}}  <!-- Ajout d'un "+1" pour afficher un numéro à partir de 1 -->
+                    <hr>
+                    {{$titre}}
+                </h3>
+                <div class="imageblog">
+                    <img src="{{index $.Image $index}}" alt="Image du blog">
+                </div>
+                <hr>
+                <!-- Formulaire pour supprimer un blog avec une image -->
+                <form action="/supprimer/{{$index}}" method="POST" style="display:inline;">
+                    <button type="submit" style="border: none; background: none; padding: 0;">
+                        <div class="poubelle">
+                            <img src="/static/images/poubelle.png" alt="Supprimer" class="poubelle">
+                        </div>
+                    </button>
+                </form>                
+            </li>
+            {{end}}
+        </ul>
+    </section>
+
+    <section class="ajouter">
+        <hr>
+        <!-- Lien pour ajouter un nouveau blog avec une image -->
+        <a href="/ajouter">
+            <img class="plus" src="/static/images/plus.png" alt="ajouter">
+        </a>
+        <hr>
+    </section>
+</body>
+</html>

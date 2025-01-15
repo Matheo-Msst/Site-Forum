@@ -1,0 +1,178 @@
+
+/*////////////////////////// Mise en pages principale///////////////////////////////// */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Giaza';
+    src: url('/font/giaza-webfont.woff')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    padding: 15px;
+}
+
+.petitY{
+    width: 70px;
+    height: auto ; 
+}
+header, footer{
+    font-family: 'Giaza';
+    color: #FFFCF7;
+    background-color: #72224D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    padding: 30px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(249, 247, 250);
+}
+
+#Titre {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*////////////////////////// Mise en pages blog 1 ///////////////////////////////// */
+
+
+#premiereimage {
+    text-align: center; /* Centre le texte dans le conteneur */
+    display: flex; /* Utilisation de Flexbox pour centrer l'image */
+    flex-direction: column; /* Aligne l'image et le texte verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    width: 100%; /* S'assure que le conteneur prend toute la largeur disponible */
+}
+
+
+#premiereimage img {
+    width: 700px; /* Largeur de l'image */
+    height: auto; /* Maintient les proportions */
+    display: block; /* Place l'image au-dessus du texte */
+    margin: 0 auto; /* Centrer l'image si nécessaire */
+    align-content: center;
+}
+
+
+#premiereimage p {
+    font-size: 14px; /* Taille du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte sous l'image */
+}
+
+
+#texte_image1 {
+    margin-top: 30px; /* Augmente l'espace au-dessus */
+    margin-left: 30px; /* Plus d'espace sur la gauche */
+    margin-right: 30px; 
+    font-size: 18px; /* Texte légèrement plus grand */
+    line-height: 1.2; /* Espace entre les lignes */
+}
+
+
+/*////////////////////////// Mise en pages blog 2 ///////////////////////////////// */
+
+#imageblog2 {
+    text-align: center; /* Centre le texte dans le conteneur */
+    display: flex; /* Utilisation de Flexbox pour centrer l'image */
+    flex-direction: column; /* Aligne l'image et le texte verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    width: 100%; /* S'assure que le conteneur prend toute la largeur disponible */
+}
+
+#imageblog2 img {
+    width: 500px; /* Largeur de l'image */
+    height: auto; /* Maintient les proportions */
+    display: block; /* Place l'image au-dessus du texte */
+    margin: 0 auto; /* Centrer l'image si nécessaire */
+    align-content: center;
+}
+
+#imageblog2 p {
+    font-size: 14px; /* Taille du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte sous l'image */
+}
+
+
+#texte_image2{
+    margin-top: 20px; /* Augmente l'espace au-dessus */
+    margin-left: 30px; /* Plus d'espace sur la gauche */
+    margin-right: 30px; 
+    font-size: 18px; /* Texte légèrement plus grand */
+    line-height: 1.2; /* Espace entre les lignes */
+}
+/*////////////////////////// Mise en pages blog 4 ///////////////////////////////// */
+
+
+
+
+
+
+
+
+/*////////////////////////// Mise en pages blog 5 ///////////////////////////////// */
+
+
+#imageblog5 {
+    text-align: center; /* Centre le texte dans le conteneur */
+    display: flex; /* Utilisation de Flexbox pour centrer l'image */
+    flex-direction: column; /* Aligne l'image et le texte verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    width: 100%; /* S'assure que le conteneur prend toute la largeur disponible */
+}
+
+#imageblog5 img {
+    width: 500px; /* Largeur de l'image */
+    height: auto; /* Maintient les proportions */
+    display: block; /* Place l'image au-dessus du texte */
+    margin: 0 auto; /* Centrer l'image si nécessaire */
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#imageblog5 p {
+    font-size: 14px; /* Taille du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte sous l'image */
+}
+#texte_image5{
+    margin-top: 20px; /* Augmente l'espace au-dessus */
+    margin-left: 30px; /* Plus d'espace sur la gauche */
+    margin-right: 30px; 
+    font-size: 18px; /* Texte légèrement plus grand */
+    line-height: 1.2; /* Espace entre les lignes */
+    font-size: 1.5rem /* Augmentation taille */
+}
+#Sous_titre{
+    font-size: 1.3rem;
+    margin-left: 1%;
+    margin-top: 2%;
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(47, 11, 82);
+    color: wheat;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Aligner le contenu en haut */
+    align-items: center;
+
+    background-image: url(/static/images/test/wallpaper2.jpg);
+    background-size: cover;
+    background-attachment: fixed;  /* Fixe l'image de fond, elle ne se déplace pas */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+hr{
+    width: 100%;
+    height: auto;
+}
+h1, h2 {
+    text-align: center;
+    margin: 0; /* Supprimer les marges pour éviter les décalages */
+    padding: 0;
+}

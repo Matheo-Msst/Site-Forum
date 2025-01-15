@@ -1,0 +1,76 @@
+.Blog {
+    width: 80%;  /* Largeur fixe de la grille */
+    margin: 0 auto;  /* Centrer la grille */
+}
+.Blog ul {
+    width: 100%;  /* Utilisation de la largeur complète du parent */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colonnes égales */
+    gap: 20px;  /* Espacement entre les éléments */
+    justify-items: center;  /* Centrer les éléments horizontalement */
+    align-items: stretch;  /* S'assurer que tous les éléments de la grille ont la même hauteur */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Blog li {
+    background-color: #3b0e45;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Aligner le titre et l'image verticalement */
+    justify-content: space-between;  /* Espacement entre le titre et l'image */
+    width: 100%;  /* Utiliser toute la largeur disponible pour chaque élément */
+    max-width: 95%;  /* Limiter la largeur maximale de chaque blog */
+}
+
+.imageblog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;  /* Permet à l'image de prendre tout l'espace restant */
+}
+
+.imageblog img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+    margin-left:4% ;
+    margin-right: 4%;
+
+    aspect-ratio: 11 / 9;    /* Ratio paysage */
+    object-fit: cover;       /* L'image couvre l'espace sans déformation */
+    object-position: center; /* Centre l'image dans son conteneur */
+
+}
+.poubelle img {
+    width: 15%;
+    height: 15%;
+}
+
+
+.plus {
+    width: auto;
+    height: 40%;
+    
+}
+.ajouter{
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+    background-color: #3800446c;
+}
+
+.poubelle img , .plus , .imageblog img {
+    transition: transform 0.3s ease-in-out;  /* Transition fluide de la transformation */
+}
+.plus:hover , .imageblog img:hover {
+    transform: scale(1.1) translate(0%, -3%); /* Légère augmentation de la taille et déplacement */
+}
+.poubelle img:hover{
+    transform: scale(1.2) translate(0%, -3%); /* Légère augmentation de la taille et déplacement */
+}
